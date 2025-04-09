@@ -422,9 +422,18 @@ hero-content p {
 }
 
 .contact-icon {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 102, 204, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 15px;
+}
+
+.contact-icon i {
+    font-size: 24px;
 }
 
 contact-icon img {
@@ -551,7 +560,12 @@ footer {
     transition: background-color 0.3s;
 }
 
-.social-links a:hover {
+.social-links a i {
+    color: white;
+    font-size: 16px;
+}
+
+social-links a:hover {
     background-color: var(--accent-color);
 }
 
@@ -915,9 +929,9 @@ footer {
     margin-right: 20px;
 }
 
-.feature-icon img {
-    width: 30px;
-    height: 30px;
+.feature-icon i {
+    font-size: 24px;
+    color: var(--primary-color);
 }
 
 .feature-content h3 {
@@ -1077,9 +1091,9 @@ footer {
     border-radius: 50%;
 }
 
-.ecom-icon img {
-    width: 40px;
-    height: 40px;
+.ecom-icon i {
+    font-size: 30px;
+    color: var(--primary-color);
 }
 
 .ecom-feature h3 {
@@ -1207,7 +1221,23 @@ footer {
 }
 
 .app-button {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.app-button:hover {
+    background-color: #555;
+}
+
+.app-button i {
+    font-size: 24px;
+    margin-right: 10px;
 }
 
 .app-button img {
